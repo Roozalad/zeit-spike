@@ -44,3 +44,4 @@ input { flex: 1; font-size: 16px; /* >=16px verhindert iOS-Zoom beim Fokus */ pa
 button { font: inherit; }
 .keyrow button, .pending button { padding: 8px 12px; border-radius: 8px; border: 0; background: #333; color: #eee; }
 .log { font-size: 11px; color: #888; white-space: pre-wrap; max-height: 160px; overflow: auto; -webkit-user-select: text; user-select: text; }
+.ver { position: fixed; top: calc(env(safe-area-inset-top) + 2px); right: 8px; font-size: 10px; color: #777; pointer-events: none; }
