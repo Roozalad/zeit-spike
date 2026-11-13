@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Zeit-Spike</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Zeit-Spike">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#111111">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section class="top">
+    <div id="status" class="status s-ready" role="status" aria-live="polite">Bereit</div>
+    <div id="detail" class="detail"></div>
+  </section>
+
+  <section class="center">
+    <button id="rec" type="button" aria-label="Halten zum Sprechen">Halten &amp; sprechen</button>
+  </section>
+
+  <section class="bottom">
+    <div id="pending" class="pending" hidden></div>
+    <ul id="results" class="results"></ul>
+    <details class="settings" id="settings">
+      <summary>API-Key</summary>
+      <div class="keyrow">
+        <input id="key" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="sk-...">
+        <button id="keysave" type="button">Speichern</button>
+      </div>
+      <div id="keyinfo" class="detail"></div>
+      <pre id="log" class="log"></pre>
+    </details>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
